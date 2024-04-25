@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseHold services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+        header{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .navoptions{
+            display: flex;            
+            font-size: large;
+            font-weight: 600;
+            justify-content: space-evenly;
+            padding: 35px 10px;
+            align-items: center;
+            margin-right: 30px;
+            
+
+        }
+        .navitems{
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 50px;
+        }
+        .navbar{
+            background-color: rgb(56, 56, 198);
+            color: white;
+            padding: 3px 3px;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .negus{
+            /* padding: 5px 5px; */
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: 500;
+            font-style: normal;
+
+        }
+        #cont{
+            border: 1px solid black;
+            border-radius: 20px;
+            /* padding-top: 5px; */
+            line-height: 35px;
+            padding:0px 5px 0px 5px ;
+        }
+        .photo{
+            /* width: 1520px; */
+            /* object-fit: fill; */
+            /* opacity: 0.5; */
+            filter: brightness(50%);
+            height: 400px;
+            background-image: url("mk6.jpg");
+        }
+        #form{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 10px;
+            padding-right: 90px;
+            background-color: white;
+            filter: brightness(100%);
+            margin-top: 178px;
+
+        }
+        .whiteboxes{
+            display: flex;
+            justify-content: center;
+        }
+        #form2{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 10px;
+            padding-right: 90px;
+            margin-top: 178px;
+
+        }
+        .space{
+            margin-right: 10px;
+        }
+        .gridrow{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 0px 30px 0px 30px;
+        }
+        .kitchen{
+            background-image: url("kitchen.jpg");
+            width: 174px;
+            width: 350px;
+            background-repeat: no-repeat;
+            border: transparent;
+            border-radius: 10px;
+        }
+        .garden{
+            background-image: url("garden.jpg");
+            background-repeat: no-repeat;
+            height: 174px;
+            width: 350px;
+            border: transparent;
+            border-radius: 10px;
+        }
+        .home{
+            background-image: url("home.jpg");
+            height: 174px;
+            width: 350px;
+            border: transparent;
+            border-radius: 10px;
+        }
+        #top{
+            margin-top: 30px;
+            color: white;
+            font-weight: 600;
+            font-size: xx-large;
+        }
+        #bottom{
+            color: white;
+            font-size: x-large;
+            font-weight: 500;
+        }
+        .servicerow{
+            /* display: grid;
+            grid-template-columns:auto auto auto auto auto auto auto auto auto;  */
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 30px;
+        }
+        .serviceitems{
+            border: 1px solid gray;
+            border-radius: 5px;
+            /* margin-right: 20px; */
+            /* padding-left: 10px; */
+        }
+        .cleaning{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto auto auto;
+            /* justify-content: space-between; */
+            border: transparent;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: larger;
+            margin: 0px 30px
+
+        }
+        .cleaning2 {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0px 30px;
+            font-weight: 500;
+            font-size: larger;
+
+
+        }
+        footer{
+            background-color: rgb(34, 10, 61);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .stores{
+            display: flex;
+            margin-top: 10px;
+
+        }
+        .footitems{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+        .icons{
+            margin: 10px 10px;
+        }
+        .lone{
+            font-weight: 300;
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span><img src="Capture.PNG" alt="logo"></span>
+        </div>
+        <div class="navoptions">
+            <div class="negus">About us</div>
+            <div class="negus">Become a professional</div>
+            <div class="negus"><i style="margin: 0px 5px;" class="fa-solid fa-location-dot"></i>Location</div>
+            <div class="negis" id="cont">Contact Now</div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="navitems">
+            <li>Facilities Management <i class="fa-solid fa-angle-down"></i></li>
+            <li>General Maintenance <i class="fa-solid fa-angle-down"></i></li>
+            <li>Engineering <i class="fa-solid fa-angle-down"></i></li>
+            <li>Need-based Engineering Solutions <i class="fa-solid fa-angle-down"></i></li>
+            <li>Administrative <i class="fa-solid fa-angle-down"></i></li>
+            <li>Safety and Security Programs <i class="fa-solid fa-angle-down"></i></li>
+            <li>Environmental <i class="fa-solid fa-angle-down"></i></li>
+        </ul>
+    </nav>
+    <div class="photo">
+        <!-- <img class="photo" src="mk3.jpg" alt="professionals"> -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos officia ab saepe blanditiis asperiores nulla eum rerum sunt, maiores error architecto animi, sed ea doloribus fugit vitae minima est?</p> -->
+        <div class="whiteboxes">
+            <div class="space">
+            <select name="city" id="form">
+                <option value="volvo">Select City</option>
+                <option value="saab">Delhi</option>
+                <option value="mercedes">Mumbai</option>
+                <option value="audi">Aurangabad</option>
+              </select>
+            </div>
+            <div >
+                <input id="form2" type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <div class="gridrow">
+            <div class="kitchen">
+                <p id="top">Flat 50% off</p>
+                <span id="bottom">On kitchen Cleaning Services</span>
+            </div>
+            <div class="garden">
+                <p id="top">Get 4 hours Free</p>
+                <p id="bottom">Gardening</p>
+            </div>
+            <div class="home">
+                <p id="top">30% off</p>
+                <p id="bottom">Home Cleaning</p>
+            </div>
+            <div class="garden">
+                <p id="top">Get 4 hours Free</p>
+                <p id="bottom">Gardening</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="margin-top: 70px; margin-bottom: 25px;">
+            <span style="font-size: x-large; font-weight: 500; margin: 0px 30px; font-weight: 600; font-style: normal;">Popular Services</span>
+        </div>
+        <div class="servicerow">
+        <div>
+            <div class="serviceitems"><img src="s1.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px; padding: 1px 1px 1px 1px;" alt=""></div>
+            <span>Service 1</span>
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s2.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px;" alt=""></div>
+            <span>Service 2</span>
+
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s3.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px;" alt=""></div>
+            <span>Service 3</span>
+
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s4.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px; padding: 3px 1px 3px 1px;" alt=""></div>
+            <span>Service 4</span>
+
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s5.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px;" alt=""></div>
+            <span>Service 5</span>
+
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s6.PNG" style="margin-left: 15px; margin-right: 15px; ; " alt=""></div>
+            <span>Service 6</span>
+
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s7.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px; padding-top: 2px; padding-bottom: 3px;" alt=""></div>
+            <span>Service 7</span>
+
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s8.PNG" style="margin-left: 15px; margin-right: 15px; margin-top: 5px;" alt=""></div>
+            <span>Service 8</span>
+        </div>
+        <div>
+            <div class="serviceitems"><img src="s9.PNG" style="margin-left: 15px; margin-right: 15px; ;" alt=""></div>
+            <span>Service 9</span>
+        </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <main>
+        <p style="margin-bottom: 30px; font-weight: 600; font-size: x-large; margin-left:40px;;">Facilities Management Services</p>
+        <div style="margin-bottom: 20px; font-weight: 500;" class="cleaning" >
+            <div style="margin-left: 10px;"><span>
+                <img src="gsah.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Seepage and Grouting</p>
+        </div>
+            <div><span>
+                <img src="gsah2.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Deep cleaning</p>
+        </div>
+            <div><span>
+                <img src="gsah3.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Kitchen Cleaning</p>
+        </div>
+            <div><span>
+                <img src="gsah4.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Bathroom Cleaning</p>
+        </div>
+        </div>
+        <div class="cleaning2">
+            <div style="margin-left: 10px;"><span>
+                <img src="gsah5.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Office essentials</p>
+        </div>
+            <div style="margin: 0px 20px;"><span>
+                <img src="gsah6.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Insurance</p>
+        </div>
+            <div><span>
+                <img src="gsah7.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>House keeping(pest)</p>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <p style="margin-bottom: 30px; font-weight: 600; font-size: x-large; margin-left:40px;;">General Maintenance Services</p>
+        <div class="cleaning" style="margin-bottom: 20px;" class="cleaning">    
+            <div style="margin-left: 10px;"><span>
+                <img src="T1.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Civil work for minor repairs</p>
+        </div>
+            <div><span>
+                <img src="T2.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Plumbing installation and service</p>
+        </div>
+            <div><span>
+                <img src="T3.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Carpentry Service</p>
+        </div>
+            <div><span>
+                <img src="T4.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Electrical Service</p>
+        </div>
+        </div>
+        <div class="cleaning2">
+            <div style="margin-left: 10px;"><span>
+                <img src="T5.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Flooring and epoxy</p>
+        </div>
+            <div style="margin-left: 20px;"><span>
+                <img src="T6.PNG" alt="" style="height:180px; width: 330px;">
+            </span>
+            <p>Mechanised Grouting</p>
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <p style="margin-bottom: 30px; font-weight: 600; font-size: x-large; margin-left:40px;">Engineering Services</p>
+            <div class="cleaning" style="margin-bottom: 20px; ">
+                <div style="margin-left: 10px;"><span>
+                    <img src="a1.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Mechanical Installations</p>
+            </div>
+                <div><span>
+                    <img src="a2.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Electrical Works</p>
+            </div>
+                <div><span>
+                    <img src="a3.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Building Management System</p>
+            </div>
+                <div><span>
+                    <img src="a4.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Fire Fighting Systems</p>
+            </div>
+            </div>
+            <div class="cleaning">
+                <div style="margin-left: 10px;"><span>
+                    <img src="T5.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Lift repairs and maintenance</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <p style="margin-bottom: 30px; font-weight: 600; font-size: x-large; margin-left:40px;">Need-based Engineering Solutions</p>
+            <div class="cleaning" style="margin-bottom: 20px;">
+                <div style="margin-left: 10px;"><span>
+                    <img src="b1.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Fleet Management</p>
+            </div>
+                <div><span>
+                    <img src="b2.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Real Estate Management</p>
+            </div>
+                <div><span>
+                    <img src="b3.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Help Desk Operations</p>
+            </div>
+                <div><span>
+                    <img src="b4.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Strategic Sourcing</p>
+            </div>
+            </div>
+            <div class="cleaning">
+                <div style="margin-left: 10px;"><span>
+                    <img src="b5.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Office Administration etc.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <p style="margin-bottom: 30px; font-weight: 600; font-size: x-large; margin-left:40px;">Safety & Security  Programs Environmental Services</p>
+            <div class="cleaning2">
+                <div style="margin-left: 10px;"><span>
+                    <img src="c1.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Cleaning and Janitorial Services</p>
+            </div>
+                <div style="margin: 0px 20px;"><span>
+                    <img src="c2.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Horticulture & Landscaping</p>
+            </div>
+                <div><span>
+                    <img src="c3.PNG" alt="" style="height:180px; width: 330px;">
+                </span>
+                <p>Pest Control Services</p>
+            </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div style="width: 440px; margin-left: 30px; margin-top: 25px;">
+            <span><img src="footlogo.png" alt=""></span>
+            <br>
+            <p style="font-size: small; font-weight: 300;">Lorem ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's Standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.</p>
+            <!-- <pre>            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's Standard dummy
+            text ever since the 1500s, when an unknown printer took a galley
+            of type and scrambled it to make a type specimen book.
+            </pre> -->
+        </div>
+        <div style="margin-top: 25px;">
+            <h3 style="font-weight: 400;">COMPANY</h3>
+            <ul class="lone">
+                <li class="footitems">About us</li>
+                <li class="footitems">Privacy</li>
+                <li class="footitems">FAQ & Terms of Use</li>
+                <li class="footitems">Contact Us</li>
+                <li class="footitems">Blog</li>
+                <li class="footitems">Coupons</li>
+                <li class="footitems">Sitemap</li>
+                <li class="footitems">Facilities Services</li>
+                <li class="footitems">Service Partner Onboarding</li>
+            </ul>
+        </div>
+        <div style="margin-top: 25px;">
+            <h3 style="font-weight: 400;">CITIES</h3>
+            <ul class="lone">
+                <li class="footitems">Chennai</li>
+                <li class="footitems">Hyderabad</li>
+                <li class="footitems">Delhi</li>
+                <li class="footitems">Pune</li>
+                <li class="footitems">Mumbai</li>
+                <li class="footitems">Bangalore</li>
+            </ul>
+        </div>
+        <div style="margin-top: 25px; margin-right: 80px;">
+            <h3 style="font-weight: 400;">DOWNLOAD OUR APP NOW</h3>
+            <div class="stores">
+                <span>
+                    <img src="appstore.PNG" alt="" style="height: 50px; width: 150px;">
+                </span>
+                <span style="margin-left: 10px;">
+                    <img src="playstore.PNG" alt="" style="height: 50px; width: 150px;">
+                </span>
+            </div>
+            <h3 style="margin-top: 5px; font-weight: 400;">Follow us on</h3>
+            <div style="font-size: xx-large; margin-top: 5px;">
+                <span ><i class="fa-brands fa-linkedin"></i></span>
+                <span class="icons"><i class="fa-brands fa-facebook"></i></span>
+                <span class="icons"><i class="fa-brands fa-instagram"></i></span>
+                <span class="icons"><i class="fa-brands fa-square-twitter"></i></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
